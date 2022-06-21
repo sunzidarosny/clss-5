@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.relative{
+width: 600px;
+position: relative;	
+}
+.relative h1{
+	font-family: 'Courgette', cursive;
+	position: absolute;
+	bottom: 40px;
+	color: #5f818d;
+	font-size: 40px;
+	max-width: 400px;
+	left: 8%;
+}
+.relative img{
+	max-width:100%;
+	
+}
+.relative:hover h1{
+	opacity:0;
+	transition-duration: 0.3s;
+}
+.ball{
+
+	width: 30px;
+	height: 30px;
+	background: #a8c4cf;
+	display: block;
+    position: absolute;
+    bottom: 30%;
+    left: 3%;
+    transform: rotate(68deg);
+    animation-name: rotate;	 
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate{
+
+	20%{
+		transform:rotate(960deg);
+		bottom: 20%;
+		left: 10%;
+	}
+	40%{
+		transform:rotate(-60deg);
+		bottom: 50%;
+		left: 15%;
+	}
+	60%{
+		transform:rotate(160deg);
+		bottom: 30%;
+		left: 60%;
+	}
+	80%{
+		transform:rotate(10deg);
+		bottom: 40%;
+		left: 80%;
+	} 
+	100%{
+		transform:rotate(560deg);
+		bottom: 50%;
+		left: 15%;
+	}
+
+}
